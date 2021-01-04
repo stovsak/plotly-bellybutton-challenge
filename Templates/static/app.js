@@ -3,6 +3,7 @@ function buildMetadata(sample) {
     // Metadata Panel
     var metadata_url = "/metadata/" + sample;
 
+
     var metadata = d3.select("#sample-metadata");
     metadata.html("");
 
@@ -143,3 +144,5 @@ function buildMetadata(sample) {
         init();
         
 }
+
+buildMetadata('samples.json')
