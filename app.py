@@ -13,6 +13,9 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
+path = os.path.dirname( os.path.realpath(__file__))
+database_path = os.path.join(path, './db/bellybutton.sqlite' )
+
 #################
 # Database Setup
 #################
